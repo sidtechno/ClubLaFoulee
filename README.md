@@ -1,4 +1,4 @@
-# ClubLaFoulee
+# Club La Foulee
 
 **WordPress**
 
