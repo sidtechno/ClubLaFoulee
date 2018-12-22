@@ -228,7 +228,7 @@ namespace ClubLaFoulee.Controllers
             //Get HTML Template
             string htmlBodyTemplate = GetHTMLTemplate();
 
-            email.Body = string.Format(htmlBodyTemplate, user.Firstname, username);
+            email.Body = string.Format(htmlBodyTemplate, user.Firstname, username, ConfigurationManager.AppSettings["Year"]);
             email.SendMail();
 
         }
@@ -295,7 +295,7 @@ namespace ClubLaFoulee.Controllers
                     <h2>CONFIRMATION D'INSCRIPTION</h2>
                     <p>Bonjour {0}, bienvenue dans le Club la Foulée, </p>
                     <p>Ce courriel confirme votre inscription dans le Club la Foulée.</p>
-                    <p>Votre inscription est valide du 1er janvier 2018 au 31 décembre 2018.</p>
+                    <p>Votre inscription est valide du 1er janvier {2} au 31 décembre {2}.</p>
                     <p>Profitez de l'occasion pour en savoir plus sur les avantages offerts aux membres chez nos commanditaires, Sports Experts C4 du Peps et Teraxion en visitant la section «Avantages aux membres»</p>
                     <p>Vous pouvez accéder à la section réservée « Membres » du site web du club avec les informations suivantes :</p>
                     <p>Code d'accès : {1}<br />Mot de passe : {1}</p>
