@@ -3,10 +3,10 @@
 **WordPress**
 
 user: admin  
-pass: LaF@ulee  
+pass: nm:6L)YpH47]rdSUW~V!  
 
 user : admin2  
-pass: L@foul3e201_Run  
+pass: hrtCWCYD)NRba10NGRfjO^hb  
 
 **DNS**
 
